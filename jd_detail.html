@@ -135,7 +135,6 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="close">×</div>
                         </div>
                     </li>
                     <li>
@@ -970,4 +969,16 @@
         <script src="jquery-1.11.3.js"></script>
         <script src="jd_detail.js"></script>
     </body>
+    <script>
+        $(function () {
+            $("#choose_color").click(function (e) {
+                e.preventDefault();
+                $tar=$(e.target);
+                console.log($tar=$(e.target));
+                $tar.parent().addClass("selected");
+                $tar.parent().siblings().removeClass("selected");
+                console.log($tar.parent().parent());
+            })
+        })
+    </script>
 </html>

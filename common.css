@@ -396,6 +396,7 @@ nav {
 /*其他导航项*/
 #nav_items {
     float:left;
+    margin-left: 40px;
 }
 #nav_items li {
     float:left;
@@ -564,4 +565,7 @@ div.close {
 }
 .sub_cate_banner li a:hover {        
     text-decoration:underline; 
-}   
+}
+#store_select:hover #store_content{
+    display: block;
+}
